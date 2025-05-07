@@ -1,0 +1,38 @@
+{
+  "name": "@iocium/throwaway-lookup",
+  "version": "0.0.0",
+  "description": "Cross-platform client for throwaway.cloud API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "docs": "typedoc"
+  },
+  "type": "module",
+  "keywords": [
+    "disposable",
+    "email",
+    "lookup",
+    "cloudflare",
+    "browser",
+    "node"
+  ],
+  "author": "Iocium",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "auto-changelog": "^2.5.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typedoc": "^0.28.4",
+    "typescript": "^5.8.3"
+  }
+}
