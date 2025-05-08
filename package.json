@@ -3,15 +3,19 @@
   "version": "0.0.0",
   "description": "Cross-platform client for throwaway.cloud API",
   "main": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/index.global.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
     "build": "tsc",
+    "build:tsup": "tsup",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "docs": "typedoc"
